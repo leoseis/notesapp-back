@@ -1,8 +1,10 @@
 from django.shortcuts import render
-from rest_framework.response import Response
+from django.shortcuts import render
 from noteapp.models import Note
 from noteapp.serializers import NoteSerializer
+from rest_framework.response import Response
 from rest_framework.decorators import api_view
+from django.db.models import Q
 from rest_framework import status
 
 
