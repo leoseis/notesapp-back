@@ -32,3 +32,6 @@ class Note(models.Model):
                 slug = f'{slug_base}-{get_random_string(5)}'
             self.slug = slug
         super(Note, self).save(*args, **kwargs)
+
+
+
